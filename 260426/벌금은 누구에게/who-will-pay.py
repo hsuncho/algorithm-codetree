@@ -6,8 +6,9 @@ answer = -1
 
 for s in student:
     cnt[s-1] += 1
-    if cnt[s-1] == 3:
+    if cnt[s-1] >= K:
         answer = s
+        break
 
 print(answer)
 
