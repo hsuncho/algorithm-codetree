@@ -25,5 +25,3 @@ for j in range(n):
 
     result = max(result, current)
 print(result)
-
-
