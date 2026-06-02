@@ -7,7 +7,7 @@ arr_2d = [
 
 num = 1
 for c in range(n - 1, -1, -1):
-    if c % 2 == 1:
+    if (n - c - 1) % 2 == 0:
         for r in range(n - 1, -1, -1):
             arr_2d[r][c] = num
             num += 1
