@@ -7,7 +7,7 @@ while True:
         break
     
     if a < m or (a == m and b < d) or (a == m and b == d and c < t) :
-        print(-1)
+        minutes = -1
         break
     
     minutes += 1
