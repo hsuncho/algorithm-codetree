@@ -29,10 +29,10 @@ for cheese in range(1, M + 1):
             possibility = False
             break
         
-        if possibility:
-            people = set()
-            for j in range(D):
-                if m[j] == cheese:
-                    people.add(p[j])
-            ans = max(ans, len(people))
+    if possibility:
+        people = set()
+        for j in range(D):
+            if m[j] == cheese:
+                people.add(p[j])
+        ans = max(ans, len(people))
 print(ans)
