@@ -12,6 +12,7 @@ for i in range(n):
         x3, x4 = lines[j]
         if (x1 < x3 and x2 > x4) or (x1 > x3 and x2 < x4):
             crossed = True
+            break
     
     if not crossed:
         cnt += 1
