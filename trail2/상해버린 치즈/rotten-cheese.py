@@ -15,7 +15,7 @@ for _ in range(S):
 
 # Please write your code here.
 ans = 0
-for cheese in range(M):
+for cheese in range(1, M + 1):
     possibility = True
 
     for i in range(S):
