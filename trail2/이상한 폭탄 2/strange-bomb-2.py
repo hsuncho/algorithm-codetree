@@ -2,7 +2,7 @@ N, K = map(int, input().split())
 num = [int(input()) for _ in range(N)]
 
 # Please write your code here.
-ans = 0
+ans = -1
 for i in range(N):
     cnt = 0
     for j in range(N):
