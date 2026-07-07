@@ -3,7 +3,7 @@ grid = [list(map(int, input().split())) for _ in range(n)]
 
 # Please write your code here.
 answer = 0
-col_seq = [[grid[col][row] for row in range(n)] for col in range(n)]
+col_seq = [[grid[row][col] for row in range(n)] for col in range(n)]
 
 def is_happy(seq, m):
     cnt = 1
