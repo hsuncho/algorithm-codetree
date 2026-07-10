@@ -9,4 +9,5 @@ for i in range(1, n+1):
         dp[i] += dp[i-2]
     if i >= 3:
         dp[i] += dp[i-3]
+    dp[i] %= 10007
 print(dp[n])
