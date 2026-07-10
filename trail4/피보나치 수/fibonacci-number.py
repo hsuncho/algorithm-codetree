@@ -4,6 +4,8 @@ N = int(input())
 def fibbo(N):
     if N <= 1:
         return N
-    else:
-        return fibbo(N-1) + fibbo(N-2)
+    prev, cur = 0, 1
+    for _ in range(2, N+1):
+        prev, cur = cur, prev + cur
+    return cur
 print(fibbo(N))
