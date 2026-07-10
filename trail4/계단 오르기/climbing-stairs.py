@@ -1,11 +1,12 @@
 n = int(input())
 
 # Please write your code here.
-def stairs(n):
-    if n == 0:
-        return 1
-    if n < 0:
-        return 0
-    
-    return stairs(n-2) + stairs(n-3)
-print(stairs(n))
+dp = [0] * (n+1)
+dp[0] = 1
+
+for i in range(1, n+1):
+    if i >= 2:
+        dp[i] += dp[i-2]
+    if i >= 3:
+        dp[i] += dp[i-3]
+print(dp[n])
